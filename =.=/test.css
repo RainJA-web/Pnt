@@ -1,0 +1,214 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/Nền-2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px; /* Cập nhật giá trị này nếu cần */
+}
+
+header, footer {
+    background-color: rgba(128, 223, 242, 0.8); /* Thêm độ trong suốt cho header và footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 5px 0;
+}
+
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(240, 232, 232, 0.9); /* Thêm độ trong suốt cho section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Căn giữa tiêu đề và hình ảnh trong khung nội dung */
+}
+
+section h2 {
+    color: #cb2222;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+section p, section ul, section img {
+    color: #383636;
+    text-align: center; /* Căn giữa nội dung văn bản */
+    margin: 0 auto;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Căn lề trái cho danh sách */
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section img {
+    display: block;
+    margin: 12px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 70%; /* Đặt kích thước tối đa của ảnh là 70% khung nội dung */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị biến dạng */
+}
+
+details {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+summary {
+    cursor: pointer;
+    background-color: #6bc16e;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+summary:hover {
+    background-color: #5db461;
+}
+
+details[open] summary {
+    background-color: #49a24d;
+}
+
+footer {
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(100, 158, 170, 0.8); /* Thêm độ trong suốt cho footer */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Định dạng thanh công cụ */
+nav {
+    background-color: #a1d4e4;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 100px; /* Đảm bảo nội dung không bị che khuất bởi thanh công cụ */
+}
+
+/* Định dạng chung cho thanh công cụ */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Căn chỉnh các mục từ bên trái */
+    align-items: center;
+    background-color: #a1d4e4; /* Màu nền giống với trang web du lịch */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Kiểu dáng cho các liên kết trong thanh công cụ */
+.navbar li a {
+    color: rgb(6, 5, 5);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar li a:hover {
+    background-color: #73c2e7;
+    border-radius: 4px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0px; /* Khoảng cách giữa logo và mục tiếp theo */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  .search-container {
+    text-align: center;
+    margin-bottom: -20px;
+    padding: 10px; /* Thêm padding nếu cần */
+    position: relative; /* Thêm thuộc tính này nếu cần */
+    z-index: 1000; /* Đảm bảo giá trị z-index đủ cao để hiển thị trên các phần tử khác */
+}
+
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4fac52;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-container .intro-text {
+    margin-bottom: 20px;
+}
+
+.intro-container .intro-image img {
+    max-width: 70%; /* Đặt kích thước tối đa của ảnh là 70% khung nội dung */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
